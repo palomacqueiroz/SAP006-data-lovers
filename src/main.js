@@ -26,7 +26,7 @@ function displayCards(movies) {
   <div class="card">
     <div class="img" style="background-image: url(${film.poster})">
     </div>             
-    <h3 id="card-title">${film.title}</h3>                
+    <h3 class="card-title">${film.title}</h3>                
       <div class="info_list">
         <ul style="list-style: none;">
           <li>Diretor: ${film.director}</li>
@@ -68,7 +68,7 @@ function displayCardsChar(character) {
     <div class="img" style="background-image: url(${char.img})">               
     </div>            
     <div class="info">
-      <h3>${char.name}</h3>
+      <h3 class="card-name">${char.name}</h3>
       <div class="info_list">
         <ul style="list-style: none;">
           <li>Filme: ${char.title}</li>

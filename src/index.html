@@ -6,35 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
 </head>
 
 <body>
   <div class="l-grid">
-    <header id="header-logo">     
+    <header class="header-logo">     
     </header>
     <aside class="side-bar">
-      <h3 class="sidebar-title">Curiosidades</h3>
-      <ul class="list-icons" style="list-style: none;">
+      <h3 class="sidebar-title">Informações</h3>
+      <ul class="list" style="list-style: none;">
         <li class="list-item">
-          <span class="icon"></span>
-          <span class="title">Veículo</span>
+            <a class="list-anchor" href="#"><i class="fas fa-question-circle icon"></i>Curiosidades</a>
         </li>
         <li class="list-item">
-          <span class="icon"></span>
-          <span class="title">Lugares</span>
+          <a class="list-anchor" href="#"><i class="fas fa-music icon"></i>Trilha Sonora</a>
         </li>
         <li class="list-item">
-          <span class="icon"></span>
-          <span class="title">Trilha Sonora</span>
-        </li>
-        <li class="list-item">
-          <span class="icon"></span>
-          <span class="title">Assista</span>
-        </li>
+          <a class="list-anchor"href="#"><i class="fas fa-film icon"></i>Assista</a>
+        </li>       
       </ul>
     </aside>
     <main>
-      <nav id="nav-bar">
+      <nav class="nav-bar">
         <select name="films" id="film" class="select-films select">
           <option value="">-- Filmes --</option>
           <option class="select-films" value="all">Todos</option>
@@ -90,7 +85,7 @@
           <option class="select-producer" value="Toru Hara">Toru Hara</option>
           <option class="select-producer" value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select>
-        <button id="buttonAz">A-Z</button>
+        <button class="buttonAz">A-Z</button>
       </nav>
 
       <section>
@@ -98,7 +93,7 @@
       </section>
       <section>
         <div class="container">
-          <img class="l-background" src="./img/totoroolhando.png" alt="">
+          <img class="l-background" src="img/totoroBackground.png" alt="">
 
         </div>
       </section>
