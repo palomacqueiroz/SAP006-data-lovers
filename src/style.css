@@ -110,20 +110,14 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    
 }
 
 .select {
     width: 130px;
     display: flex; 
     border-radius: 5px;
-    padding: 3px;    
-   
+    padding: 3px; 
 }
-
-/*.select-specie {
-    text-align: center;
-}*/
 
 .buttonAz {
     border-radius: 20px;
@@ -134,8 +128,7 @@
 
 .compute-stats {
     text-align: center;
-    color: rgb(61, 46, 41);
-    
+    color: rgb(61, 46, 41);    
 }
 
 .container {
@@ -145,9 +138,6 @@
     justify-content: space-between;    
     grid-area: container;
     margin: 20px 40px 10px 40px;
-    /*background: url(./img/totoroolhando.png);
-    */  
-    
 }
 
 .l-background {
@@ -162,7 +152,6 @@
 
 .info_list {
     text-align: left;  
-    
 }
 
 .card {
@@ -172,7 +161,6 @@
     border-radius: 20px;
     box-shadow: 2px 2px 23px rgb(10, 18, 54);
     background-color: rgb(161, 192, 191);
-    
 }
 
 .img {
@@ -223,7 +211,6 @@ footer{
         margin: 0 auto;
         line-height: 20px;
         margin-top:10px
-        
     }
     
     .icon {
@@ -235,8 +222,7 @@ footer{
     }
 
     .list {
-        display: flex;   
-        
+        display: flex;  
    }
   
 

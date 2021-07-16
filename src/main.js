@@ -21,7 +21,6 @@ const buttonAz = document.querySelector(".buttonAz")
 }
 */
 function displayCards(movies) {
-
   document.querySelector(".container").innerHTML = movies.map((film) => `     
   <div class="card">
     <div class="img" style="background-image: url(${film.poster})">
@@ -62,7 +61,6 @@ function getMovieScores() {
 }
 
 function displayCardsChar(character) {
-
   document.querySelector(".container").innerHTML = character.map((char) => `
   <div class="card">
     <div class="img" style="background-image: url(${char.img})">               
