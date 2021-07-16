@@ -19,7 +19,8 @@
     background: #657774;
     grid-area: side-bar;
     border-radius: 15px;
-    color: whitesmoke;       
+    color: whitesmoke; 
+          
 }
 
 .side-bar h3{
@@ -29,7 +30,7 @@
 
 #header-logo {
     width: 100%;
-    height: 250px;
+    height: 400px;
     /*background-color: #1BA0CF;*/
     align-items: center;
     border-radius: 20px ;
@@ -42,33 +43,38 @@
 
 @keyframes l-header {
     0%, 20% {
-    background-image: url(./img/logoghibli.png);
+    background-image: url(./img/ghibli6.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     }
         
     25%, 40% {
-    background-image: url(./img/totoroolhando.png);
+    background-image: url(./img/ghibli2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     }
         
     45%, 60% {
-    background-image: url(./img/totoroeflores.png);
+    background-image: url(./img/ghibli3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     }
         
     5%, 80% {
-    background-image: url(./img/foto3.jpg);
+    background-image: url(./img/ghibli4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     }
         
     85%, 100% {
-    background-image: url(./img/kiki.jpg);
+    background-image: url(./img/ghibli5.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     }       
 }
 
@@ -85,6 +91,7 @@
 }
 
 .select {
+    width: 130px;
     display: flex; 
     border-radius: 5px;
     padding: 3px;
@@ -96,9 +103,11 @@
 }*/
 
 #buttonAz {
-    border-radius: 100%;
+    border-radius: 20px;
     width: 60px;
     height: 30px;
+    border: 1px solid rgb(125, 126, 129);
+    
 }
 
 .compute-stats {
@@ -124,30 +133,44 @@
     height: 400px;
 }
 
-.info {
+#card-title {
     text-align: center;
     font: rgb(32, 40, 17);
 }
 
 .info_list {
-    text-align: left;   
+    text-align: left;  
     
 }
 
 .card {
-    width: 204px;
-    height: 334px;
+    width: 300px;
+    height: 400px;
     margin: 12px 4px;
     border-radius: 20px;
     box-shadow: 2px 2px 23px rgb(10, 18, 54);
     background-color: rgb(161, 192, 191);
+    
 }
 
 .img {
     width: 100%;
-    height: 160px;
+    height: 230px;
     background-size: cover;
+    background-position: top;
     border-radius: 20px 20px 0 0;
+}
+
+#card-title {
+    margin-top: 5px;        
+}
+
+.info_list {  
+    margin-top: -10px;
+    margin-left: -25px;   
+    align-self: center;
+    font: rgb(32, 40, 17);
+    font-size: 18px;
 }
 
 footer{
@@ -158,7 +181,7 @@ footer{
 }
 
 @media only screen and (max-width: 550px){
-    .l-grid{
+    .l-grid{        
         grid-template-columns: 1fr;
         grid-row: 1fr 0.75fr 0.75fr 1.25fr 0.25fr ;
         grid-template-areas: 
@@ -168,15 +191,50 @@ footer{
         "container"
         "footer";
     }
-    
-    .side-bar{
+        
+    .side-bar {        
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;     
     }
 
-    .nav-bar{
-        display: flex;
-        flex-wrap: wrap;
+    .sidebar-title {
+        margin: 0 auto;
     }
-        
+
+   .list-icons {
+        display: flex;
+        flex-wrap: wrap;        
+   }
+
+   .list-item {
+       margin: 5px;
+   }
+
+    #nav-bar {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        height: 80px;      
+    }
+
+    .select {
+        width: 30%;
+        margin-right: 5px;
+    }
+    
+    .container {
+        justify-content: center;
+    }   
+/*
+    #card-title {
+        margin-top: 5px;        
+    }
+
+    .info_list {  
+        margin-top: -10px;
+        margin-left: -25px;   
+        align-self: center;
+        font: rgb(32, 40, 17);
+        font-size: 18px;
+    }*/
 }

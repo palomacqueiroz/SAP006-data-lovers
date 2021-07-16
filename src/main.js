@@ -25,9 +25,8 @@ function displayCards(movies) {
   document.querySelector(".container").innerHTML = movies.map((film) => `     
   <div class="card">
     <div class="img" style="background-image: url(${film.poster})">
-    </div>                
-    <div class="info">
-      <h3 id="title">${film.title}</h3>                
+    </div>             
+    <h3 id="card-title">${film.title}</h3>                
       <div class="info_list">
         <ul style="list-style: none;">
           <li>Diretor: ${film.director}</li>
@@ -36,7 +35,6 @@ function displayCards(movies) {
           <li>Nota: ${film.rt_score}</li>
         </ul>
       </div>
-    </div>
   </div>  
 `).join("");
 }
@@ -45,6 +43,7 @@ function getPeople() {
   let people = [];
   for (let film of movies) {
     for (let char of film.people) {
+      char["title"] = film["title"]
       people.push(char)
     }
   }
@@ -72,6 +71,7 @@ function displayCardsChar(character) {
       <h3 id="title">${char.name}</h3>
       <div class="info_list">
         <ul style="list-style: none;">
+          <li>Filme: ${char.title}</li>
           <li>Genero: ${char.gender}</li>
           <li>Idade: ${char.age}</li> 
           <li>Espécie: ${char.specie}</li> 
