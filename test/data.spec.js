@@ -58,7 +58,7 @@ const mockMovies = [
         gender: "Female",
         specie: "Human",
       },
-    ],
+    ]
   },
   {
     title: "Castle in the Sky",
@@ -77,6 +77,24 @@ const mockMovies = [
         specie: "Human",
       },
     ],
+  },
+  { 
+    "title": "Kiki's Delivery Service",     
+    "producer": "Hayao Miyazaki",
+    "release_date": "1989",
+    "rt_score": "96",
+    "people": [
+      {
+        "name": "Kiki",
+        "gender": "Female",
+        "specie": "Witch"
+      },
+      {
+        "name": "Jiji",
+        "gender": "Male",
+        "specie": "Cat"
+     }
+    ]
   }
 ];
 
@@ -129,6 +147,24 @@ describe("order movies alphabetically", () => {
           },
         ],
       },
+      { 
+        "title": "Kiki's Delivery Service",     
+        "producer": "Hayao Miyazaki",
+        "release_date": "1989",
+        "rt_score": "96",
+        "people": [
+          {
+            "name": "Kiki",
+            "gender": "Female",
+            "specie": "Witch"
+          },
+          {
+            "name": "Jiji",
+            "gender": "Male",
+            "specie": "Cat"
+         }
+        ]
+      },
       {
         title: "My Neighbor Totoro",
         producer: "Hayao Miyazaki",
@@ -158,7 +194,25 @@ describe("order movies by ascending order", () => {
   });
 
   it("should return recent movies first", () => {
-    const objectMovieDate = [
+    const objectMovieDate = [     
+      { 
+        "title": "Kiki's Delivery Service",     
+        "producer": "Hayao Miyazaki",
+        "release_date": "1989",
+        "rt_score": "96",
+        "people": [
+          {
+            "name": "Kiki",
+            "gender": "Female",
+            "specie": "Witch"
+          },
+          {
+            "name": "Jiji",
+            "gender": "Male",
+            "specie": "Cat"
+         }
+        ]
+      },
     {
       title: "My Neighbor Totoro",
       producer: "Hayao Miyazaki",
@@ -192,7 +246,7 @@ describe("order movies by ascending order", () => {
           name: "Lusheeta Toel Ul Laputa",
           gender: "Female",
           specie: "Human",
-        },
+        }        
       ]
     },
   ];    
@@ -201,6 +255,24 @@ describe("order movies by ascending order", () => {
 
   it("should return movies with higher score first", () => {
     const objectMovieScore = [
+      { 
+        "title": "Kiki's Delivery Service",     
+        "producer": "Hayao Miyazaki",
+        "release_date": "1989",
+        "rt_score": "96",
+        "people": [
+          {
+            "name": "Kiki",
+            "gender": "Female",
+            "specie": "Witch"
+          },
+          {
+            "name": "Jiji",
+            "gender": "Male",
+            "specie": "Cat"
+         }
+        ]
+      },
       {
         title: "Castle in the Sky",
         producer: "Isao Takahata",
