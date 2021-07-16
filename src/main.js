@@ -10,7 +10,7 @@ const selectSpecie = document.querySelector(".select-specie");
 const selectProducer = document.querySelector(".select-producer");
 const selectDirector = document.querySelector(".select-director");
 const computeStats = document.querySelector(".compute-stats");
-const buttonAz = document.querySelector("#buttonAz")
+const buttonAz = document.querySelector(".buttonAz")
 
 /*function resetCards(){
   selectMovies.value = ""
@@ -68,7 +68,7 @@ function displayCardsChar(character) {
     <div class="img" style="background-image: url(${char.img})">               
     </div>            
     <div class="info">
-      <h3 id="title">${char.name}</h3>
+      <h3>${char.name}</h3>
       <div class="info_list">
         <ul style="list-style: none;">
           <li>Filme: ${char.title}</li>
