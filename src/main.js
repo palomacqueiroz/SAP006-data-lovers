@@ -66,7 +66,7 @@ function displayCardsChar(character) {
     <div class="img" style="background-image: url(${char.img})">               
     </div>            
     <div class="info">
-      <h3 class="card-name">${char.name}</h3>
+      <h3 class="card-title">${char.name}</h3>
       <div class="info_list">
         <ul style="list-style: none;">
           <li>Filme: ${char.title}</li>

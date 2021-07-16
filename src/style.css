@@ -22,9 +22,9 @@
 }
 
 .sidebar-title {
-    font-size: 23px;
+    font-size: 18px;
     text-align: center;
-    line-height: 100px;
+    line-height: 80px;
 }
 
 .list {
@@ -33,18 +33,17 @@
 
 .list-anchor {
     display: block;
-    padding: 20px;
+    padding: 12px;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(248, 241, 241);
     box-sizing: border-box;
     text-decoration: none;    
     transition: .4s;
-      
-    
 }
+
 .icon {
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 .list-item:hover .list-anchor {
@@ -53,8 +52,7 @@
 
 .header-logo {
     width: 100%;
-    height: 400px;
-    /*background-color: #1BA0CF;*/
+    height: 250px;
     align-items: center;
     border-radius: 20px ;
     grid-area: header-logo;
@@ -102,10 +100,9 @@
 }
 
 .nav-bar {    
-    height: 65px;
+    height: 60px;
     background-color: #D3A3BC;
     display: flex;
-    /*flex-wrap: wrap; */
     grid-area: nav-bar;   
     justify-content: space-around;
     align-items: center;
@@ -113,22 +110,23 @@
 }
 
 .select {
-    width: 130px;
+    width: 120px;
     display: flex; 
     border-radius: 5px;
-    padding: 3px; 
+    padding: 2px; 
 }
 
 .buttonAz {
     border-radius: 20px;
     width: 60px;
-    height: 30px;
+    height: 28px;
     border: 1px solid rgb(125, 126, 129);    
 }
 
 .compute-stats {
     text-align: center;
-    color: rgb(61, 46, 41);    
+    color: rgb(61, 46, 41);
+    font-weight:lighter;  
 }
 
 .container {
@@ -137,30 +135,27 @@
     flex-wrap: wrap;
     justify-content: space-between;    
     grid-area: container;
-    margin: 20px 40px 10px 40px;
+    margin: 20px 60px 10px 60px;
 }
 
 .l-background {
     opacity: 0.3;
     width: 100%;
-    height: 400px;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.info_list {
-    text-align: left;  
+    height: 350px;
 }
 
 .card {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 380px;
     margin: 12px 4px;
     border-radius: 20px;
     box-shadow: 2px 2px 23px rgb(10, 18, 54);
     background-color: rgb(161, 192, 191);
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 5px;
 }
 
 .img {
@@ -171,16 +166,12 @@
     border-radius: 20px 20px 0 0;
 }
 
-.card-title {
-    margin-top: 5px;        
-}
-
 .info_list {  
     margin-top: -10px;
     margin-left: -25px;   
     align-self: center;
     font: rgb(32, 40, 17);
-    font-size: 18px;
+    font-size: 16.5px;
 }
 
 footer{
@@ -218,14 +209,13 @@ footer{
     }
 
     .list-anchor{
-        line-height: 25px;        
+        line-height: 25px; 
     }
 
     .list {
-        display: flex;  
+        display: flex;
    }
   
-
     .nav-bar {
         display: flex;
         flex-wrap: wrap; 
@@ -241,16 +231,57 @@ footer{
     .container {
         justify-content: center;
     }   
-/*
-    #card-title {
-        margin-top: 5px;        
+}
+
+@media only screen and (min-width: 1400px){
+    .sidebar-title {
+        font-size: 23px;
+        line-height: 100px;
+    }
+
+    .list-anchor {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .icon {
+        margin-right: 16px;
+    }
+    
+    .header-logo {
+        height: 400px;
+    }
+
+    .nav-bar {    
+        height: 65px;
+    }
+    
+    .select {
+        width: 130px;
+        padding: 3px; 
+    }
+
+    .buttonAz {
+        height: 30px;    
+    }
+
+    .l-background {
+        height: 400px;
+    }
+
+    .container {
+        margin: 20px 40px 10px 40px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 400px;
     }
 
     .info_list {  
-        margin-top: -10px;
-        margin-left: -25px;   
-        align-self: center;
-        font: rgb(32, 40, 17);
         font-size: 18px;
-    }*/
+    }
+    
+
+
 }
