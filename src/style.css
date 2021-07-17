@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+
+
 .l-grid {
     display: grid;
     height: 100vh;
@@ -10,6 +14,7 @@
     "side-bar footer";
     grid-gap: 0.3rem;
     margin: 5px;
+    font-family: 'Poppins', sans-serif;
        
 }
 
@@ -112,21 +117,29 @@
 .select {
     width: 120px;
     display: flex; 
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 2px; 
+    background-color: white;
+    border:none;
+    box-shadow: 2px 2px 3px rgb(234, 230, 240);    
+    
 }
 
 .buttonAz {
     border-radius: 20px;
     width: 60px;
     height: 28px;
-    border: 1px solid rgb(125, 126, 129);    
+    background-color: white;
+    border:none;
+    box-shadow: 2px 2px 3px rgb(234, 230, 240);    
 }
 
 .compute-stats {
     text-align: center;
     color: rgb(61, 46, 41);
-    font-weight:lighter;  
+    font-weight:400;
+    text-decoration: underline;
+     
 }
 
 .container {
@@ -156,6 +169,7 @@
 .card-title {
     text-align: center;
     margin-top: 5px;
+    color: #265538;
 }
 
 .img {
@@ -172,6 +186,7 @@
     align-self: center;
     font: rgb(32, 40, 17);
     font-size: 16.5px;
+    font-weight: 300;
 }
 
 footer{
