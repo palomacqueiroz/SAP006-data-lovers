@@ -64,35 +64,35 @@
 
 @keyframes l-header {
     0%, 20% {
-    background-image: url(./img/ghibli6.png);
+    background-image: url(./img/kikiBicicleta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     }
         
     25%, 40% {
-    background-image: url(./img/ghibli2.jpg);
+    background-image: url(./img/kikiGatos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     }
         
     45%, 60% {
-    background-image: url(./img/ghibli3.jpg);
+    background-image: url(./img/totoroDeitado.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     }
         
     5%, 80% {
-    background-image: url(./img/ghibli4.jpg);
+    background-image: url(./img/logoghibli.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     }
         
     85%, 100% {
-    background-image: url(./img/ghibli5.png);
+    background-image: url(./img/kikiVoando.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
