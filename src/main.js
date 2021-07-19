@@ -3,6 +3,7 @@ import data from "./data/ghibli/ghibli.js";
 
 const movies = data.films;
 let orderMovies = movies
+let orderCharacters = getPeople()
 
 const selectMovies = document.querySelector(".select-films");
 const selectCharacter = document.querySelector(".select-character");
@@ -12,15 +13,19 @@ const selectDirector = document.querySelector(".select-director");
 const computeStats = document.querySelector(".compute-stats");
 const buttonAz = document.querySelector(".buttonAz")
 
-/*function resetCards(){
+function resetCardsFilms(){
   selectMovies.value = ""
-  selectCharacter.value = ""
-  selectSpecie.value = ""
   selectProducer.value = ""
   selectDirector.value = ""  
 }
-*/
+
+function resetCardsPeople() {
+  selectCharacter.value = ""
+  selectSpecie.value = ""
+}
+
 function displayCards(movies) {
+  resetCardsPeople()
   document.querySelector(".container").innerHTML = movies.map((film) => `     
   <div class="card">
     <div class="img" style="background-image: url(${film.poster})">
@@ -38,6 +43,14 @@ function displayCards(movies) {
 `).join("");
 }
 
+function getMovieScores() {
+  let scores = []
+  for (let film of movies) {
+    scores.push(film.rt_score)
+  }
+  return scores
+}
+
 function getPeople() {
   let people = [];
   for (let film of movies) {
@@ -49,18 +62,8 @@ function getPeople() {
   return people;
 }
 
-let orderCharacters = getPeople()
-
-
-function getMovieScores() {
-  let scores = []
-  for (let film of movies) {
-    scores.push(film.rt_score)
-  }
-  return scores
-}
-
 function displayCardsChar(character) {
+  resetCardsFilms()
   document.querySelector(".container").innerHTML = character.map((char) => `
   <div class="card">
     <div class="img" style="background-image: url(${char.img})">               
@@ -87,9 +90,6 @@ const sortAz = () => {
     return displayCardsChar(orderAz(orderCharacters, "name"))
   }
 }
-/* 
-return displayCards(movies)
-*/
 
 function displayPercentage(data, dataValue) {
   computeStats.innerHTML = `A porcentagem de personagens desta seleção é ${computeStatsGender(data, dataValue)}%`
@@ -126,7 +126,6 @@ function printDirector() {
   computeStats.innerHTML = ""
   const filterResult = filterData(movies, "director", selectDirector.value)
   orderMovies = filterResult
-  //resetCards()
   return displayCards(filterResult);
 }
 
@@ -134,7 +133,6 @@ function printProducer() {
   computeStats.innerHTML = ""
   const filterResult = filterData(movies, "producer", selectProducer.value)
   orderMovies = filterResult
-  //resetCards()
   return displayCards(filterResult);
 }
 
