@@ -27,7 +27,7 @@
 }
 
 .sidebar-title {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 80px;
 }
@@ -97,7 +97,7 @@
     }
         
     85%, 100% {
-    background-image: url(./img/kikiVoando.jpg);
+    background-image: url(./img/flores.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,6 +170,7 @@
     text-align: center;
     margin-top: 5px;
     color: #265538;
+    font-size: 16px;
 }
 
 .img {
@@ -185,7 +186,7 @@
     margin-left: -25px;   
     align-self: center;
     font: rgb(32, 40, 17);
-    font-size: 16.5px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -194,6 +195,7 @@ footer{
     grid-area: footer;
     border-radius: 5px;    
     text-align: center;
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 550px){
