@@ -36,6 +36,10 @@
     padding: 0px;    
 }
 
+.list-item {
+    white-space: nowrap;
+}
+
 .list-anchor {
     display: block;
     padding: 12px;
@@ -220,19 +224,22 @@ footer{
         line-height: 20px;
         margin-top:10px
     }
-    
-    .icon {
-        margin-left: 20px; 
-    }
-
-    .list-anchor{
-        line-height: 25px; 
-    }
 
     .list {
         display: flex;
    }
-  
+
+    .list-item{
+        white-space: none;
+    }
+    
+    .list-anchor{
+        line-height: 25px; 
+    }
+    .icon {
+        margin-left: 20px; 
+    }
+
     .nav-bar {
         display: flex;
         flex-wrap: wrap; 
