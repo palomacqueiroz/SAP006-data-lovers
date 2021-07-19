@@ -27,9 +27,11 @@
 }
 
 .sidebar-title {
-    font-size: 15px;
-    text-align: center;
-    line-height: 80px;
+    background-image: url(./img/logo.png);
+    background-size: cover;    
+    width: 200px;
+    height: 60px;
+
 }
 
 .list {
