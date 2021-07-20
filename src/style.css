@@ -136,7 +136,13 @@
     height: 28px;
     background-color: white;
     border:none;
-    box-shadow: 2px 2px 3px rgb(234, 230, 240);    
+    box-shadow: 2px 2px 3px rgb(234, 230, 240);  
+    transition: 0.5s;
+}
+
+.buttonAz:hover {
+    background-color:rgb(161, 192, 191);
+    
 }
 
 .compute-stats {
