@@ -8,7 +8,7 @@
 - [4. Desenho de interface do usuário](#4-desenho-de-interface-do-usuário)
 - [5. Testes de Usabilidade](#5-teste-de-usabilidade)
 - [6. Testes Unitários](#6-testes-unitário)
-- [7. Objetivos dOe Aprendizagem](#7-objetivos-de-aprendizagem)
+- [7. Objetivos de Aprendizagem](#7-objetivos-de-aprendizagem)
 
 ---
 
