@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+
+
+.l-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 3.5fr;
+    grid-template-rows: 1fr 0.6fr 2fr 0.4fr;
+    grid-template-areas: 
+    "side-bar header-logo"
+    "side-bar nav-bar"
+    "side-bar container"
+    "side-bar footer";
+    grid-gap: 0.3rem;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+       
+}
+
+.side-bar {
+    background: #657774;
+    grid-area: side-bar;
+    border-radius: 15px;
+    color: whitesmoke;  
+
+}
+
+.sidebar-title {
+    background-image: url(./img/logo.png);
+    background-size: cover;    
+    width: 150px;
+    height: 60px;
+}
+
+.list {
+    padding: 0px;    
+}
+
+.list-item {
+    white-space: nowrap;
+}
+
+.list-anchor {
+    display: block;
+    padding: 12px;
+    line-height: 50px;
+    font-size: 16px;
+    color: rgb(248, 241, 241);
+    box-sizing: border-box;
+    text-decoration: none;    
+    transition: .4s;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.list-item:hover .list-anchor {
+    background-color: #D3A3BC;
+}
+
+.header-logo {
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    border-radius: 20px ;
+    grid-area: header-logo;
+    animation-duration: 40s;
+    animation-name: l-header;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;   
+}
+
+@keyframes l-header {
+    0%, 20% {
+    background-image: url(./img/kikiBicicleta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+        
+    25%, 40% {
+    background-image: url(./img/kikiGatos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+        
+    45%, 60% {
+    background-image: url(./img/totoroDeitado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+        
+    5%, 80% {
+    background-image: url(./img/logoghibli.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+        
+    85%, 100% {
+    background-image: url(./img/flores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }       
+}
+
+.nav-bar {    
+    height: 60px;
+    background-color: #D3A3BC;
+    display: flex;
+    grid-area: nav-bar;   
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.select {
+    width: 120px;
+    display: flex; 
+    border-radius: 10px;
+    padding: 2px; 
+    background-color: white;
+    border:none;
+    box-shadow: 2px 2px 3px rgb(234, 230, 240);    
+    
+}
+
+.buttonAz {
+    border-radius: 20px;
+    width: 60px;
+    height: 28px;
+    background-color: white;
+    border:none;
+    box-shadow: 2px 2px 3px rgb(234, 230, 240);  
+    transition: 0.5s;
+}
+
+.buttonAz:hover {
+    background-color:rgb(161, 192, 191);
+    
+}
+
+.compute-stats {
+    text-align: center;
+    color: rgb(61, 46, 41);
+    font-weight:400;
+    text-decoration: underline;
+     
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    grid-area: container;
+    margin: 20px 60px 10px 60px;
+}
+
+.l-background {
+    opacity: 0.3;
+    width: 100%;
+    height: 350px;
+}
+
+.card {
+    width: 250px;
+    height: 380px;
+    margin: 12px 4px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 23px rgb(10, 18, 54);
+    background-color: rgb(161, 192, 191);
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 5px;
+    color: #265538;
+    font-size: 16px;
+}
+
+.img {
+    width: 100%;
+    height: 230px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 20px 20px 0 0;
+}
+
+.info_list {  
+    margin-top: -10px;
+    margin-left: -25px;   
+    align-self: center;
+    font: rgb(32, 40, 17);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer{
+    background: #D3A3BC;
+    grid-area: footer;
+    border-radius: 5px;    
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 550px){
+    .l-grid{        
+        grid-template-columns: 1fr;
+        grid-row: 1fr 0.75fr 0.75fr 1.25fr 0.25fr ;
+        grid-template-areas: 
+        "header-logo"
+        "side-bar"
+        "nav-bar"
+        "container"
+        "footer";
+    }
+        
+    .side-bar {        
+        display: flex;
+        flex-wrap: wrap;     
+    }
+
+    .sidebar-title {
+        margin: 0 auto;
+        line-height: 20px;
+        margin-top:10px
+        
+    }
+    
+    .list {
+        display: flex;
+    }
+
+    .list-anchor{
+        line-height: 25px; 
+    }
+
+    .list-item {
+        white-space: normal;
+    }
+
+   .icon {
+    margin-left: 20px;      
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        height: 80px;      
+    }
+
+    .select {
+        width: 30%;
+        margin-right: 5px;
+    }
+    
+    .container {
+        justify-content: center;
+    }   
+}
+
+@media only screen and (min-width: 1400px){
+    .sidebar-title {
+        font-size: 23px;
+        line-height: 100px;
+        width: 200px;
+    }
+
+    .list-anchor {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .icon {
+        margin-right: 16px;
+    }
+    
+    .header-logo {
+        height: 400px;
+    }
+
+    .nav-bar {    
+        height: 65px;
+    }
+    
+    .select {
+        width: 130px;
+        padding: 3px; 
+    }
+
+    .buttonAz {
+        height: 30px;    
+    }
+
+    .l-background {
+        height: 400px;
+    }
+
+    .container {
+        margin: 20px 40px 10px 40px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .info_list {  
+        font-size: 18px;
+    }
+    
+
+
+}

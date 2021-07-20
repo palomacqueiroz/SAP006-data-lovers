@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="img/favicon.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+</head>
+
+<body>
+  <div class="l-grid">
+    <header class="header-logo">     
+    </header>
+    <aside class="side-bar">
+      <h3 class="sidebar-title"></h3>
+      <ul class="list" style="list-style: none;">
+        <li class="list-item">
+            <a class="list-anchor" href="https://www.garotasgeeks.com/10-curiosidades-fascinantes-sobre-o-studio-ghibli/" target="blank"><i class="fas fa-question-circle icon"></i>Curiosidade</a>
+        </li>
+        <li class="list-item">
+          <a class="list-anchor" href="https://www.youtube.com/watch?v=QZhI2qD3WHM" target="blank"><i class="fas fa-music icon"></i>Música</a>
+        </li>
+        <li class="list-item">
+          <a class="list-anchor" href="https://www.netflix.com/search?q=studio%20ghibli" target="blank"><i class="fas fa-film icon"></i>Assista</a>
+        </li>       
+      </ul>
+    </aside>
+    <main>
+      <nav class="nav-bar">
+        <select name="films" id="film" class="select-films select">
+          <option value="">-- Filmes --</option>
+          <option class="select-films" value="all">Todos</option>
+          <option class="select-films" value="rt_score">Nota</option>
+          <option class="select-films" value="release_date">Lançamento</option>
+        </select>
+
+        <select name="characters" id="character" class="select-character select">
+          <option value="">-- Personagens --</option>
+          <option class="select-character" value="Female">Feminino</option>
+          <option class="select-character" value="Male">Masculino</option>
+        </select>
+
+        <select name="species" id="specie" class="select-specie select">
+          <option value="">-- Espécies --</option>
+          <option class="select-specie" value="Red elk">Alce</option>
+          <option class="select-specie" value="Arch-mage/Human">Arquimago/Humano</option>
+          <option class="select-specie" value="Witch">Bruxa</option>
+          <option class="select-specie" value="Witch/Human">Bruxa/Humana</option>
+          <option class="select-specie" value="Raccoon Dog">Cão-guaxinim</option>
+          <option class="select-specie" value="Deity, Dragon">Dragão/Divindade</option>
+          <option class="select-specie" value="Demon">Demônio</option>
+          <option class="select-specie" value="unknown">Desconhecido</option>
+          <option class="select-specie" value="Deity">Divindade</option>
+          <option class="select-specie" value="Human/Scarecrow">Espantalho/Humano</option>
+          <option class="select-specie" value="Spirit">Espírito</option>
+          <option class="select-specie" value="Spirit of The White Fox">Espírito da Raposa Branca</option>
+          <option class="select-specie" value="Cat">Gato</option>
+          <option class="select-specie" value="Human">Humana</option>
+          <option class="select-specie" value="Wolf">Lobo</option>
+          <option class="select-specie" value="Borrower">Mutuário</option>
+          <option class="select-specie" value="Bird">Passáro</option>
+          <option class="select-specie" value="Fish/Human">Peixe/Humano</option>
+          <option class="select-specie" value="Wizard">Sábio</option>
+          <option class="select-specie" value="Totoro">Totoro</option>
+        </select>
+
+        <select name="directors" id="director" class="select-director select">
+          <option value="">-- Diretores --</option>
+          <option class="select-director" value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option class="select-director" value="Isao Takahata">Isao Takahata</option>
+          <option class="select-director" value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option class="select-director" value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option class="select-director" value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option class="select-director" value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        </select>
+
+        <select name="producers" id="producer" class="select-producer select">
+          <option value="">-- Produtores --</option>
+          <option class="select-producer" value="Isao Takahata">Isao Takahata</option>
+          <option class="select-producer" value="Toshio Suzuki">Toshio Suzuki</option>
+          <option class="select-producer" value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option class="select-producer" value="Toru Hara">Toru Hara</option>
+          <option class="select-producer" value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+        <button class="buttonAz">A-Z</button>
+      </nav>
+
+      <section>
+        <p class="compute-stats"></p>
+      </section>
+      <section>
+        <div class="container">
+          <img class="l-background" src="img/totoroBackground.png" alt="">
+
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p class="copyright"> &copy; Copyright Studio Ghibli by Paloma Queiroz and Sabrina Araujo - 2021 </p>
+    </footer>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
