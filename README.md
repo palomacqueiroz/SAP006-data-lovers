@@ -68,22 +68,22 @@ Como usuário quero ver as informações na tela em ordem alfabética, cliclando
 
 No primeiro planejamento para o projeto, decidimos em relação ao layout, fazer um dashboard e as informações ficariam no centro da tela dispostas em cards para cada filme.
 
-![desenho] (https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/desenho.png)
+![desenho](https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/desenho.png)
 
 Com o desenvolvimento do projeto, fizemos os protótipos no Figma para definir melhor como queríamos os layouts.
 
-![protótipo] (https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/prototipoBaixaFidelidade.png)
+![protótipo](https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/prototipoBaixaFidelidade.png)
 
 Após finalizarmos o projeto, tinhamos o seguinte layout:
 
-![principal] (https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/telaInicial.png)
+![principal](https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/telaInicial.png)
 
 
 ### Paleta de Cores
 
 Fizemos pesquisas sobre o Estudio Ghibli para saber quais cores são mais usadas nos filmes para usá-las em nossa aplicação.
 
-![paleta] (https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/paleta.png)
+![paleta](https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/paleta.png)
 
 
 ## 5. Testes de Usabilidade
@@ -108,7 +108,7 @@ Fizemos pesquisas com usuários sobre a utilização da página e recebemos algu
 
 Escrevemos os testes unitários  para verificar se as funções JavaScript estão funcionando e garantir que a aplicação continue funcionando após alguma alteração em sua base do código.
 
-![testes] (https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/test.png)
+![testes](https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/test.png)
 
 
 ## 7. Objetivos dOe Aprendizagem
