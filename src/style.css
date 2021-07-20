@@ -29,9 +29,8 @@
 .sidebar-title {
     background-image: url(./img/logo.png);
     background-size: cover;    
-    width: 200px;
+    width: 150px;
     height: 60px;
-
 }
 
 .list {
@@ -225,6 +224,7 @@ footer{
         margin: 0 auto;
         line-height: 20px;
         margin-top:10px
+        
     }
     
     .list {
@@ -264,6 +264,7 @@ footer{
     .sidebar-title {
         font-size: 23px;
         line-height: 100px;
+        width: 200px;
     }
 
     .list-anchor {
