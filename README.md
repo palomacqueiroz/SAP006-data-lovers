@@ -37,7 +37,7 @@ Nomes e personagens dos filmes, ano de lançamento e notas.
 - Quando utilizam ou utilizariam o produto:
 O usuário acessa o site depois de assistir a um filme para saber mais detalhes ou curiosidades e/ou informações mais refinadas. 
 
-### *Histórias de Usuáro
+### Histórias de Usuáro
 
 A história de usuário é uma descrição curta, informal e em linguagem simples do que um usuário quer fazer dentro da aplicação.
 Como história de usuário usamos três cenários que simbolizam as necessidades deste com relação a aplicação.
