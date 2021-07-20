@@ -102,7 +102,7 @@ Fizemos pesquisas com usuários sobre a utilização da página e recebemos algu
 
 - Incluimos o nome Studio Ghibli na barra lateral.
 
-![foto] ()
+![main](https://github.com/palomacqueiroz/SAP006-data-lovers/blob/main/main.jpeg)
 
 ## 6. Testes Unitários
 
